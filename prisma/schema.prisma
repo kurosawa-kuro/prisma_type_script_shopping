@@ -39,8 +39,10 @@ model Profile {
 }
 
 model Product {
-  id   Int    @id @default(autoincrement())
-  name String
+  id    Int    @id @default(autoincrement())
+  price Int
+  name  String
+  image String
 
   Product_Categories Product_Categories[]
   Cart               Cart[]
